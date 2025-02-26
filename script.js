@@ -5,9 +5,9 @@ function checkStatus() {
 
     let result;
     if (defended === "yes" && salary === "yes") {
-        result = "You truly are a PhD! Congrats! Feeling all high and mighty now aren't ya!";
+        result = "You truly are a PhD! Congrats! Feeling all high and mighty now aren't ya! Go suck a lemon or something...";
     } else if (defended === "yes" && salary === "no") {
-        result = "You are not really a PhD...try harder...";
+        result = "You are not really a PhD...try harder...or don't. I don't care!";
     } else if (defended === "no" && salary === "yes") {
         result = "Cheater! How?? Teach me!!! Please...";
     } else {
