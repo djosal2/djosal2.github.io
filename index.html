@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhD Checker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>PhD Checker</h1>
+        <form id="phdForm">
+            <div class="question">
+                <label>Did you defend your PhD thesis?</label>
+                <div>
+                    <input type="radio" id="defendedYes" name="defended" value="yes">
+                    <label for="defendedYes">Yes</label>
+                </div>
+                <div>
+                    <input type="radio" id="defendedNo" name="defended" value="no" checked>
+                    <label for="defendedNo">No</label>
+                </div>
+            </div>
+            <div class="question">
+                <label>Do you get adequate salary?</label>
+                <div>
+                    <input type="radio" id="salaryYes" name="salary" value="yes">
+                    <label for="salaryYes">Yes</label>
+                </div>
+                <div>
+                    <input type="radio" id="salaryNo" name="salary" value="no" checked>
+                    <label for="salaryNo">No</label>
+                </div>
+            </div>
+            <button type="button" onclick="checkStatus()">Check Status</button>
+        </form>
+        <div id="result" class="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
